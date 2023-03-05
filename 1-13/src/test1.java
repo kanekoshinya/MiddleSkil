@@ -16,28 +16,5 @@ public class test1 {
 		List<String> strArray3 = new ArrayList<String>();
 		List<String> strArray4 = new ArrayList<String>();
 		
-		for(int i = 0; i < strArray1.size(); i++) {
-			
-			if(i>1) {
-				strArray2.add(strArray1.get(i));
-				if(i==strArray1.size()-1) {
-					for(int y = 0; y < strArray2.size(); y++) {
-						boolean k = false;
-						k = strArray2.get(y).equals("k")||strArray2.get(y).equals("a")||strArray2.get(y).equals("o")?true:false;
-						if(k) {
-							strArray3.add(strArray2.get(y));
-						}
-						if(y==strArray2.size()-1) {
-							for(int z = 0; z < strArray3.size(); z++) {
-								if(z!=4) {
-									strArray4.add(strArray3.get(z));
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		System.out.println(strArray4);
 	}
 }
